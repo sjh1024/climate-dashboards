@@ -1,0 +1,40 @@
+#1. Load in all data.frames
+print("Loading data frames...")
+SCANhist <- read.csv("SCAN_hist.csv", header=TRUE, check.names=FALSE)
+SCAN45 <- read.csv("SCAN_45.csv", header=TRUE, check.names=FALSE)
+SCAN85 <- read.csv("SCAN_85.csv", header=TRUE, check.names=FALSE)
+print("Data frames loaded.")
+
+#2. Rename columns with paste0, if applicable (DON'T NEED TO DO TO GHCND)
+print("Renaming columns...")
+colnames(SCANhist) <- paste0("SCAN_", colnames(SCANhist))
+colnames(SCAN45) <- paste0("SCAN_", colnames(SCAN45))
+colnames(SCAN85) <- paste0("SCAN_", colnames(SCAN85))
+
+#3. Rename first column to XX_DATE (DON'T NEED TO DO TO GHCND)
+names(SCANhist)[names(SCANhist) == 'SCAN_'] <- 'SCAN_DATE'
+names(SCAN45)[names(SCAN45) == 'SCAN_'] <- 'SCAN_DATE'
+names(SCAN85)[names(SCAN85) == 'SCAN_'] <- 'SCAN_DATE'
+
+print("Changing values...")
+#4. Change relevant values to NA
+mergeSCAN <- SCAN45
+mergeSCANHistNA <- SCANhist
+mergeSCAN[,2:ncol(mergeSCAN)] = NA
+mergeSCANHistNA[,2:ncol(mergeSCANHistNA)] = NA
+
+
+#5. Merge rows.
+print("Merging...")
+
+
+names(newHistSCAN)<- paste0(names(newHistSCAN), "_HIST")
+names(newHistSCAN)[names(newHistSCAN) == 'SCAN_DATE_HIST'] <- 'SCAN_DATE'
+
+print(names(newHistSCAN))
+
+print("Writing results to rds...")
+saveRDS(newHistSCAN, "SCANHistorical.rds")
+saveRDS(new45SCAN, "SCANrcp45.rds")
+saveRDS(new85SCAN, "SCANrcp85.rds")
+print("DONE!")

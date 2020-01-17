@@ -1,0 +1,9 @@
+{
+    "path" : "/srv/shiny-server/sample-apps/Snow",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

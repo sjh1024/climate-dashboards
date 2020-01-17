@@ -1,0 +1,5 @@
+# data files that don't need to be uploaded to git#
+*.nc
+*.rds
+*.csv
+

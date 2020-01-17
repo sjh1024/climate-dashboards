@@ -1,0 +1,10 @@
+name: hbrealtime
+title:
+username:
+account: hubbardbrooksensor
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 723605
+bundleId: 2099608
+url: https://hubbardbrooksensor.shinyapps.io/HBrealtime/
+when: 1558466111.89058

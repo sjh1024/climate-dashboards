@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Sample Archive Search</title>
+    <meta charset="UTF-8">
+    <meta name="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="author" content="Kristi Donahue, UNH">
+    <meta name="description" content="Hubbard Brook Ecosystem Study">
+    <meta name="keywords" content="Hubbard Brook Experimental Forest, Hubbard Brook Ecosystem Study, LTER">
+    <link href="webpagehtml_files/main_finalrotate.css" rel="stylesheet" type="text/css">
+    <link href="webpagehtml_files/simpledropdown.css" rel="stylesheet" type="text/css">
+    <link href="webpagehtml_files/newcss.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="webpagehtml_files/jquery.js"></script>
+    <script type="text/javascript" src="webpagehtml_files/jquery_002.js"></script>
+    <script type="text/javascript" src="webpagehtml_files/dropdown.js"></script>
+    <script type="text/javascript" src="webpagehtml_files/slideshow.js"></script>
+    <script type="text/javascript" src="webpagehtml_files/search_portal.js"></script>
+    <script type="text/javascript" src="webpagehtml_files/archive.js"></script>
+<link rel="icon" href="http://data.hubbardbrook.org/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body id="twoCol">
+ <div id="contentWrap">
+   <div id="banner"></div>
+ 
+  <!-- start nav -->
+<div id="nav_main_sdd">
+<ul id="sddm">  
+
+<li><a href="http://hubbardbrook.org/">HOME</a> </li> 
+<li><a href="http://hubbardbrook.org/hubbard-brook-research-focus">RESEARCH</a> </li> 
+<li><a href="http://hubbardbrook.org/d/hubbard-brook-data-catalog">DATA</a> </li> 
+<li><a href="http://hubbardbrook.org/biblio">PUBLICATIONS</a> </li> 
+<li><a href="http://hubbardbrook.org/people">PEOPLE</a> </li> 
+<li><a href="http://hubbardbrook.org/education">EDUCATION</a> </li> 
+<li><a href="http://hubbardbrook.org/">POLICY/OUTREACH</a> </li> 
+<li><a href="http://hubbardbrook.org/gallery">GALLERY</a> </li> 
+<li><a href="http://hubbardbrook.org/news-events">NEWS/EVENTS</a> </li> 
+
+</ul><div style="clear:both"></div></div> 
+
+
+  <!-- end nav -->
+
+
+
+
+  <div class="heading_large">Hubbard Brook Sample Archive</div>
+  <p>Searches are not case-sensitive. Please be patient, your search may take a few moments.</p>
+ <p>For more information on the sample archive: <a href="https://hubbardbrook.org/d/sample-archive-overview"> [click here]</a>
+ 
+ </p><form method="get" name="arcsearch" id="arcsearch" action="" class="searchbar">
+ <table summary="Search form for archived samples.">
+            <tbody><tr>
+			<td>
+				<p>Location<br> <select name="location_cat" id="location_cat">
+                    <option value="" selected="selected">All</option>
+					<option value="1">Watershed 1</option>
+					<option value="2">Watershed 2</option>
+					<option value="3">Watershed 3</option>
+					<option value="4">Watershed 4</option>
+					<option value="5">Watershed 5</option>
+					<option value="6">Watershed 6</option>
+					<option value="7">Watershed 7</option>
+					<option value="8">Watershed 8</option>
+					<option value="9">Watershed 9</option>
+					<option value="10">Watershed 101</option>
+					<option value="11">Mirror Lake Watershed</option>
+					<option value="12">Valley Plots</option>
+					<option value="13">Other HBEF location</option>
+					<option value="14">Non-HBEF location</option>             
+					</select></p>
+            </td>
+			<td>
+				<p>Barcode<br><input name="barcode" id="barcode" maxlength="8" type="text"></p>
+			</td>
+			<td>
+				<p>Collector Name<br><input name="collector_name" id="collector_name" type="text"></p>
+			</td>			
+			<td>
+				<p>Date<br><input name="date_value" id="date_value" type="text"></p>
+			</td>
+			</tr>
+		
+            <tr>
+            <td>
+				<p>Material Type<br><select name="type_cat" size="1" id="type_cat" onchange="redirect(this.options.selectedIndex); change();">
+					<option value="" selected="selected">All</option>
+					<option value="1">Water</option>
+					<option value="2">Rock</option>
+					<option value="3">Soil</option>
+					<option value="4">Fungus</option>
+					<option value="5">Plant</option>
+					<option value="6">Insect</option>
+					<option value="7">Other</option>
+				</select></p>
+            </td>
+			
+            <td>
+				<p>Material Sub-Type<br><select name="sub_type_cat" size="1" id="sub_type_cat" disabled="disabled" onchange="redirect1(this.options.selectedIndex); changetwo();">
+				<option value="" selected="selected">N/A</option>
+				</select></p>
+			</td>            
+			<td>
+				<p>Collection Method<br><select name="collect_method_cat" size="1" id="collect_method_cat" disabled="disabled" onchange="redirect2(this.options.selectedIndex); changethree();">
+				<option value="" selected="selected">N/A</option>
+				</select></p>
+			</td>			
+			<td>
+				<p>Soil Type<br><select name="sub_sub_type_cat" size="1" id="sub_sub_type_cat" disabled="disabled">
+				<option value="" selected="selected">N/A</option>
+				</select></p>				
+            </td>
+            </tr>
+						
+			<tr>
+			<td>
+				<p>Common Name<br><input name="common_name" id="common_name" type="text"></p>
+			</td>
+			<td>
+				<p>Scientific Name<br><input name="latin_name" id="latin_name" type="text"></p>
+			</td>
+			<td>
+				<p>Collection<br><input name="collection" id="collection" type="text"></p>
+			</td>
+			<td>
+				
+			</td>
+			</tr>
+			
+            <tr>
+            <td colspan="4" style="margin: 0; text-align: center;">
+			<input value="Search Sample Archive!" name="submit" type="submit">
+			</td>
+            </tr>
+  </tbody></table>
+  <p>Display results as: <input name="display" id="display" value="coll" checked="checked" type="radio"> Collections <input name="display" id="display" value="ind" type="radio"> Individual Samples.</p> <script type="text/javascript" src="webpagehtml_files/types.js"></script>
+  </form> 
+  
+<div class="results">
+	
+Please enter some search criteria.</div></div></body></html>

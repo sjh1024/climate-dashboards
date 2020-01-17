@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+#container {
+	width: 950px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 10px auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #999999;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	padding: 0px;
+} 
+/* common layout */
+
+#contentWrap {
+	background-color: #FFF;
+	margin-top: 12px;
+	margin-right: auto;
+	margin-bottom: 12px;
+	margin-left: auto;
+	width: 1050px;
+	text-align: center;
+	
+}
+
+#main {
+	width: 1050px;
+	margin-right: 0px;
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	text-align: left;
+}
+
+#sidebarright{
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	background-color: #FFF;
+	display: block;
+	float: right;
+}
+#colorboxindex{
+	padding-top: 22px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+	clear: none;
+	float: right;
+	width: 250px;
+	display: inline;
+	position: relative;
+	z-index: auto;
+	background-color: #F1FAF3;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	border: 1px solid #DBF3E7;
+}
+#colorbox{
+	padding-top: 22px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+	clear: none;
+	float: right;
+	width: 240px;
+	display: block;
+	position: relative;
+	z-index: auto;
+	background-color: #F1FAF3;
+	border: 1px solid #DBF3E7;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+#overviewbox{
+	padding-top: 12px;
+	padding-right: 8px;
+	padding-bottom: 2px;
+	padding-left: 18px;
+	clear: none;
+	float: right;
+	width: 210px;
+	display: block;
+	position: relative;
+	z-index: auto;
+	background-color: #E8EFE1;
+	border: 1px solid #DBF3E7;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+
+
+#sidebarright p {
+	padding-left: 0px;
+	text-align: left;
+}
+#sidebarright img {
+	margin: 0px;
+	padding: 5px;
+	float: left;
+	clear: none;
+}
+#colorbox p {
+	color: #5A72A9;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#colorboxindex p {
+	color: #5A72A9;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#sidebarsmleft {
+	float: left; /* since this element is floated, a width must be given */
+	width: 236px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	margin: 0px;
+	padding: 0px;
+	
+}
+#colorboxl{
+	background: #E1EEFA; /* the background color will be displayed for the length of the content in the column, but no further */
+	background: #E1EEFA; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 0px 8px 10px 19px;
+	text-align: left;
+	margin: 0px 0px 6px;
+	vertical-align: top;
+	border: 1px solid #D5E1ED;
+}
+
+
+
+
+
+
+.readmore {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #436fb8;
+	font-weight: normal;
+}
+.leftblue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #40638B;
+	font-weight: normal;
+}
+
+
+
+
+
+body  {
+	font: normal 76%  Verdana, Arial, Helvetica, sans-serif;
+	background: #FFF url(../graphics/backgrounds/dkgreyfade.jpg) repeat-x;
+	margin: 0;
+	padding: 0;
+	color: #666666;
+}
+
+#dataset_titles {
+	background: #5E769A;
+	color: #ffffff;
+	line-height: 120%;
+	padding: 8px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+#banner{
+	height: 80px;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	width: 850px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: url(../graphics/drupalhbeslogo.png);
+}
+
+
+
+.mainhead{
+	color: #5768A2;
+	font-size: 1.1em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.callout {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #666666;
+	margin: 12px 5px 5px 0px;
+	padding: 8px 0px 0px;
+	background-position: left;
+	text-align: left;
+}
+ul {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background-position: left;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	list-style-image: none;
+	color: #5F7897;
+}
+
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-style: normal;
+	color: #436FB8;
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.4em;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	margin-top: 4px;
+	margin-right: 12px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+
+
+
+
+
+.clear:after { 
+content: "."; display: block; height: 0; clear: both; visibility: hidden; 
+}
+	
+.browntype {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	color: #B77B2F;
+	font-size: 1em;
+}
+.dkgreentype {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	color: #779162;
+	font-size: 1em;
+}
+.dkblutype {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	color: #567E85;
+	font-size: 1em;
+}
+.greentype {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	color: #70B01B;
+	font-size: 1em;
+}
+#dottedhoriz_short {
+	width: 170px;
+	border-top: 1px dotted #666;
+	display: block;
+	line-height: 1px;
+	vertical-align: text-bottom;
+	margin: 12px 2px 12px 0px;
+	font-size: 1px;
+	padding: 0px;
+}
+#dottedhoriz_long{
+	width: 98%;
+	border-top: 1px dotted #666;
+	display: block;
+	line-height: 1px;
+	vertical-align: text-bottom;
+	margin: 12px 12px 8px;
+	font-size: 1px;
+	padding: 0px;
+	text-align: center;
+}
+#dottedhoriz_longleft{
+	width: 98%;
+	border-top: 1px dotted #666;
+	display: block;
+	line-height: 1px;
+	vertical-align: text-bottom;
+	font-size: 1px;
+	padding: 0px;
+	text-align: center;
+	margin-top: 12px;
+	margin-right: 12px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+.subhead_grgold {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #98A45D;
+	margin-left: 18px;
+	margin-bottom: 4px;
+	margin-top: 18px;
+	display: block;
+}
+.subhead_teal {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	font-weight: bold;
+	color: #296871;
+}
+.subhead_green {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1
+.em;
+	font-weight: bold;
+	color: #769758;
+}
+.subhead_blue {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #5768A2;
+}
+.subhead_ltblue {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #668A93;
+	margin: 0px;
+	padding: 0px;
+}
+.subhead_deepblue {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #407180;
+}
+.subhead_peri {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #545EB0;
+}
+.subhead_grey {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #6C8D90;
+}
+
+.subhead_table {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: ##407180;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	margin: 0px;
+}
+.subhead_bluback{
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #FFF;
+	background-color: #6C8D90;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+}
+.subhead_blue {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #5768A2;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	display: block;
+}
+
+		
+.bluehead_simple {
+	color: #73998E;
+	font-size: 1em;
+	margin: 12px 0px 0px;
+	padding: 4px 0px 5px 21px;
+	font-weight: bolder;
+}
+
+.list_subhead {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #769758;
+	margin: 8px 0px 0px;
+	padding: 0px;
+	display: block;
+}
+.list_item {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 2px 0px 0px 12px;
+	padding: 0px;
+}
+
+.extrasppara {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	padding: 0px;
+	margin-top: 8px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+}
+
+
+.caption{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-style: italic;
+	line-height: 0.9em;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+.caption_moreleading{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.85em;
+	font-style: italic;
+	line-height: 1.1em;
+	font-weight: normal;
+	font-variant: normal;
+}
+.gallerycaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9em;
+	font-style: italic;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+.sub {
+	font-size: .7em;
+	vertical-align: baseline;
+}
+.sup {
+	vertical-align: 0.3em;
+	font-size: 0.7em;
+}
+
+ 
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+#clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 10px;
+	color: #FFFFFF;
+}
+
+
+#footer {
+	padding: 0 5px 0 10px;
+	clear: both;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	display: block;
+	background-color: #FFF;
+} 
+#footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 2px 1px; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	font-size: 0.8em;
+	text-align: center;
+	line-height: 1.2em;
+	font-style: italic;
+}
+
+#footer p a {
+	font-style: italic;
+}
+
+
+
+#nsf_lter {
+	position: absolute;
+	z-index: 5;
+	height: 148px;
+	width: 688px;
+	left: 40px;
+	top: 400px;
+}
+#nsf_lter_logos {
+	position: absolute;
+	z-index: 7;
+	height: 47px;
+	width: 142px;
+	left: 273px;
+	top: 0px;
+}
+#nsf_lter_links {
+	position: absolute;
+	z-index: 7;
+	height: 12px;
+	width: 300px;
+	left: 163px;
+	top: 49px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #517700;
+	text-align: center;
+}
+#nsf_lter_links a {
+	color: #517700;
+}
+#nsf_lter_links a:visited {
+	color: #517700;
+}
+#nsf_lter_text {
+	position: absolute;
+	z-index: 7;
+	height: 15px;
+	width: 500px;
+	left: 90px;
+	top: 78px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000000;
+	text-align: center;
+}
+#nsf_lter_menu {
+	position: relative;
+	z-index: 7;
+	height: 45px;
+	width: 200px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #000000;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+#footer .largefooter {
+	font-size: 0.85em;
+	color: #666;
+	text-align: left;
+	padding: 0px;
+	margin-top: 4px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	line-height: 1.1em;
+	display: inline-block;
+}
+
+#highlights{
+	margin: 0px;
+	padding: 0px;
+}
+
+#div id="navmenu"{
+	display:none }
+	
+	
+#mainstory_leftcol {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 255px;
+}
+#mainstory{
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 12px;
+	text-align: left;
+}
+.photolinknorule {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+.firstarticlehead {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+	color: #517394;
+	line-height: 1.1em;
+}
+
+.articlesubhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.1em;
+	color: #587B42;
+	padding-top: 5px;
+	line-height: 1em;
+	text-align: left;
+}
+.articleblurb {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	padding: 0px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	line-height: 1.3em;
+	text-align: left;
+}
+.subhead_ltbluerule {
+	font-family: verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #668A93;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+	width: 500px;
+	display: block;
+	margin-top: 14px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+	margin-left: 0px;
+	padding-top: 7px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.clearright {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}

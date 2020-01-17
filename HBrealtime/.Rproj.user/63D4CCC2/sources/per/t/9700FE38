@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555088132099.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3492316807",
+    "id" : "9700FE38",
+    "lastKnownWriteTime" : 1558465947,
+    "last_content_update" : 1558465947763,
+    "path" : "~/Hubbard Brook/HBrealtime/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "416,40",
+        "scrollLine" : "416"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

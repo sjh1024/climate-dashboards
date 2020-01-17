@@ -1,0 +1,65 @@
+.highlightdate {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    color: #6B8746;
+}
+ul {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #5B7B86;
+    background-position: left;
+    text-align: left;
+    margin: 0px;
+    list-style-image: none;
+    display: list-item;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+li{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #5B7B86;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    list-style-type: none;
+}
+ul li a {
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    display: block;
+    padding: 0px;
+}
+ul li a.second {
+    margin-top: 0px;
+    margin-right: 14px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    display: block;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 12px;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.results {
+    width: 100%;
+    text-align:left;
+}
+.searchbar {
+    border:1px solid #5B7B86;
+    margin: 0 10px 0 0;
+}
+div.searchbar {
+    width: 100%;
+}
+.addform td {
+    width: 30%;
+}

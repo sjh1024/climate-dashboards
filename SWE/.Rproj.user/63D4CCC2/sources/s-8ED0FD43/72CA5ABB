@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560275725326.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "72CA5ABB",
+    "lastKnownWriteTime" : 1578086933,
+    "last_content_update" : 1578086933186,
+    "path" : "/srv/shiny-server/dashboards/SWE/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "331,28",
+        "scrollLine" : "307"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

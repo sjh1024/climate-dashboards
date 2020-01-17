@@ -1,0 +1,87 @@
+#nav_main_sdd {
+	background-color:#405430;
+	height:50px;
+	width:auto;
+	margin: 0px;
+	padding: 0px 0px px;
+	display: block;
+}
+#sddm {margin:0; padding:0; z-index:30}
+#sddm li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+	font-size:0.98em
+}
+#sddm li a {
+	border-right:0px solid #CCC;
+	display:block;
+	margin:0;
+	background:#405430;
+	color:#FFF;
+	text-align:center;
+	text-decoration:none;
+	font-weight:bold;
+	font-size: 0.95em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-top: 18px;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	padding-left: 13px;
+}
+#sddm li a:hover {
+	background:#DBDFC1;
+	color:#4D95AB;
+}
+#sddm div {
+	position:absolute;
+	visibility:hidden;
+	margin-left:0px;
+	padding:0;
+	background:#EBEBEB;
+	
+}
+#sddm div a {
+	position:relative;
+	display:block;
+	border:1px solid #999;
+	margin:0;
+	padding:3px 5px 3px 14px;
+	width:185px;
+	white-space:nowrap;
+	text-align:left;
+	text-decoration:none;
+	color:#369;
+	font-weight:normal;
+	font-size:0.95em;
+	z-index:50;
+	background-color: #DBDFC1;
+}
+#sddm div a:hover {
+	background: #DBDFC1;
+	color: #4D95AB;
+	font-weight:normal
+}
+#lastone div {position:absolute; visibility:hidden; margin-left:-1px; 
+	padding:0; background:#EBEBEB; border:1px solid #CCC}
+
+#lastone a {
+	position:relative;
+	display:block;
+	margin:0;
+	padding:3px 5px 3px 14px;
+	width:184px;
+	white-space:nowrap;
+	text-align:left;
+	text-decoration:none;
+	background:#E6EBDC;
+	color:#003366;
+	font-weight:normal;
+	font-size:0.95em
+}
+#lastone div a:hover {
+	background: #DBDFC1;
+	color: #4D95AB;
+	font-weight:normal
+}
